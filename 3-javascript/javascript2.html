@@ -1,0 +1,35 @@
+<html>
+    <head>
+        
+        <title>Javascript</title>
+
+    </head>
+
+    <body>
+
+        <p>What is the magic word?</p>
+        
+        <input type="text" id="word">
+        
+        <button id="done">Click here when finished</button>
+
+        <script type="text/javascript">
+
+            document.getElementById("done").onclick = function(){
+
+             var magicWord = "bumpkin";
+
+            var word = document.getElementById("word").value;
+
+            if (word == magicWord){
+                alert("Elementary my dear Watson!")
+            } else{
+                alert("You SUCK!");
+            }
+            
+            }
+
+        </script>
+        
+    </body>
+</html>

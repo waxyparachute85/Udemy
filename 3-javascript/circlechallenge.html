@@ -1,0 +1,64 @@
+<html>
+    <head>
+        
+        <title>Disappearing Circles</title>
+
+        <style type="text/css">
+
+            .float{
+                float:left;
+                margin:50px;
+                border-radius:100px;
+                
+                }
+            
+
+            #redCircle{
+                background-color: red;
+                height: 100px;
+                width: 100px;
+            }
+            #orangeCircle{
+                background-color: orangered;
+                height: 100px;
+                width: 100px;
+            }
+            #purpleCircle{
+                background-color: purple;
+                height: 100px;
+                width: 100px;
+            }
+           
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="circles">
+        
+            <div id="redCircle" class="float"></div>
+
+            <div id="orangeCircle"class="float"></div>
+
+            <div id="purpleCircle"class="float"></div>
+        </div>
+        <script>
+
+            document.getElementById("redCircle").onclick = function(){
+                document.getElementById("redCircle").style.display = "none"
+            }
+
+            document.getElementById("orangeCircle").onclick = function(){
+                document.getElementById("orangeCircle").style.display = "none"
+            }
+
+            document.getElementById("purpleCircle").onclick = function(){
+                document.getElementById("purpleCircle").style.display = "none"
+            }
+            
+
+        </script>
+
+    </body>
+</html>
